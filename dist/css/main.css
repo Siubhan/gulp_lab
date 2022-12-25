@@ -1,0 +1,140 @@
+body {
+  background-color: #164b69;
+  font-size: 14px;
+  font-family: arial;
+}
+main {
+  margin: 0 auto;
+  max-width: 700px;
+  min-height: 700px;
+  height: 100%;
+  background-color: #e3e3e3;
+}
+main p {
+  text-align: justify;
+  line-height: 2;
+  word-spacing: 2px;
+  text-indent: 1.5em;
+}
+main .content {
+  margin: 15px;
+  padding: 0 5px;
+}
+nav {
+  margin: 0 auto;
+  font-weight: bold;
+  padding-top: 10px;
+}
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style: none;
+}
+nav ul li.active {
+  background-color: #dcdcdc;
+}
+nav ul li {
+  height: auto;
+  display: inherit;
+  align-items: stretch;
+  padding: 15px;
+  color: #dcdcdc;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #000;
+}
+nav ul li a:hover {
+  color: #dcdcdc;
+}
+.line-img {
+  display: flex;
+  flex-direction: row;
+}
+.line-img > p {
+  display: inherit;
+  flex-direction: column;
+  margin-right: 10px;
+}
+.line-img > img {
+  float: right;
+  display: inherit;
+  flex-direction: column;
+}
+.line-img img.galery-3 {
+  display: inherit;
+  width: 33.3%;
+  margin: 5px;
+}
+.line-img img.galery-4 {
+  display: inherit;
+  width: 25%;
+  margin: 5px;
+}
+.line-video {
+  display: flex;
+  justify-content: center;
+  height: 60%;
+  width: 100%;
+  min-height: 300px;
+}
+.line-video video {
+  margin: 5px;
+}
+.two-img {
+  display: flex;
+  flex-direction: column;
+}
+.two-img img {
+  margin: 5px;
+}
+.long-img {
+  display: flex;
+  flex-direction: row;
+}
+.long-img img {
+  margin: 5px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+footer {
+  margin: 0 auto;
+  max-width: 700px;
+  min-height: 200px;
+  background-color: #e3e3e3;
+}
+@media (max-width: 600px) {
+  main {
+    width: auto;
+    max-width: 100%;
+    min-height: 100%;
+  }
+  main .content {
+    flex-grow: 1;
+  }
+  main .content .line-img {
+    flex-direction: column-reverse;
+  }
+  main .content .galery-3 {
+    width: auto;
+  }
+  main .content .galery-4 {
+    width: auto;
+  }
+  main .content .long-img {
+    width: auto;
+    flex-direction: column;
+  }
+  nav,
+  ul {
+    flex-flow: column wrap;
+  }
+  nav li,
+  ul li {
+    align-self: center;
+  }
+  video {
+    width: 100%;
+  }
+}

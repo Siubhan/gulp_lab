@@ -1,0 +1,9 @@
+mixin createNav(listLi)
+	ul.list
+		each name in listLi
+			if name[2] == 1
+				li.active
+					a(href=name[1])= name[0]
+			else
+				li
+					a(href=name[1])= name[0]
